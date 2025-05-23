@@ -1,0 +1,42 @@
+@keyframes slidein
+{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes type
+{ from{
+    width: 0px;
+}
+to {
+    width: 700px;
+}}
+@keyframes type2{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 110px;
+    }
+}
+@keyframes type3{
+    from{
+        width: 0px;
+    }
+    to{
+        width:550px; 
+    }
+}
+@keyframes type4 {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 400px;
+    }
+}

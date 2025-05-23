@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECODE</title>
+    <link rel="icon" href="favidon.png">
+    <link rel="stylesheet" href="decode.css">
+</head>
+<body>
+    <div class="box1">
+        <h6 id="tail">STEGANO.IO</h6>
+        <a href="home.html">HOME</a>
+        <a href="encode.html">ENCODE</a>
+    <img src="favidon.png" alt="logo" id="logo">
+    <h1 id="head">DECODE :</h1>
+    <p id="encodepara">To decode a hidden message from an image, just choose an image and hit the Decode button. Neither the image nor the message that has been hidden will be at any moment transmitted over the web, all the magic happens within your browser.</p>
+    <form class="form">
+        <div class="form-group">
+          <input class="form-control" type="file" name="decodeFile" onchange="previewDecodeImage()">
+        </div>
+        <div class="form-group">
+          <button class="decode btn btn-default pull-right" onclick="decodeMessage()">Decode</button>
+        </div>
+      </form>
+      <div class="clearfix"></div>
+      <div class="binary-decode" style="display: none;">
+        <h3>Hidden message</h3>
+        <textarea class="form-control-message" style="word-wrap:break-word;">
+        </textarea>
+      </div>
+      <div class="decode" style="display: none;">
+        <h3>Input</h3>
+        <canvas></canvas>
+      </div>
+    </div>
+    </div>
+</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="pro.js"></script>
+    
+</body>
+</html>
